@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_party"
+    tools:context=".TenthParty">
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textSkor10"
+            android:textSize="24sp"
+            android:textColor="@color/score_color"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="@string/score" />
+
+        <TextView
+            android:id="@+id/textHigh10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+
+        <TextView
+            android:id="@+id/textKalan10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/time" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="@string/monkey"
+        android:textColor="#000000"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout21"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout22"
+        android:layout_width="417dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playfishformonkey"
+            app:srcCompat="@drawable/fish" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playoctopusformonkey"
+            app:srcCompat="@drawable/octopus"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playmonkey"
+            app:srcCompat="@drawable/monkey"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="422dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView10">
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playchickenformonkey"
+            app:srcCompat="@drawable/chicken" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playbirdformonkey"
+            app:srcCompat="@drawable/bird"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playfrogformonkey"
+            app:srcCompat="@drawable/frog"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageListen10"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:background="@color/listen_button_color"
+        android:onClick="listenAgain10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout22"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <TextView
+        android:id="@+id/textListen10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listen"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageListen10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

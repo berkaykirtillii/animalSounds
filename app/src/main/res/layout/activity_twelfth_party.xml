@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_party"
+    tools:context=".TwelfthParty">
+    <LinearLayout
+        android:id="@+id/linearLayout27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textSkor12"
+            android:textSize="24sp"
+            android:textColor="@color/score_color"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="@string/score" />
+
+        <TextView
+            android:id="@+id/textHigh12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+
+        <TextView
+            android:id="@+id/textKalan12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/time" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="@string/monkey"
+        android:textColor="#000000"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout27"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout28"
+        android:layout_width="417dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout29">
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playmonkey3"
+            app:srcCompat="@drawable/monkey" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playsnailformonkey"
+            app:srcCompat="@drawable/snail"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playlionformonkey"
+            app:srcCompat="@drawable/lion"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout29"
+        android:layout_width="422dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView12">
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playbeeformonkey"
+            app:srcCompat="@drawable/bee" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playdolphinformonkey"
+            app:srcCompat="@drawable/dolphin"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:onClick="playturtleformonkey"
+            app:srcCompat="@drawable/tortoise"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageListen12"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:background="@color/listen_button_color"
+        android:onClick="listenAgain12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout28"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <TextView
+        android:id="@+id/textListen12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listen"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageListen12" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_party"
+    tools:context=".ThirteenthParty">
+
+    <LinearLayout
+        android:id="@+id/linearLayout30"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textSkor13"
+            android:textSize="24sp"
+            android:textColor="@color/score_color"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="@string/score" />
+
+        <TextView
+            android:id="@+id/textHigh13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+
+        <TextView
+            android:id="@+id/textKalan13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/time" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="@string/cow"
+        android:textColor="#000000"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout30" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout31"
+        android:layout_width="411dp"
+        android:layout_height="177dp"
+        android:layout_marginBottom="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout32">
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playdogforcow"
+            app:srcCompat="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/imageView47"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playsheepforcow"
+            app:srcCompat="@drawable/sheep"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView48"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playelephantforcow"
+            app:srcCompat="@drawable/elephant"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+
+        <ImageView
+            android:id="@+id/imageView49"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playbirdforcow"
+            app:srcCompat="@drawable/bird" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout32"
+        android:layout_width="411dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView13">
+
+        <ImageView
+            android:id="@+id/imageView50"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playduckforcow"
+            app:srcCompat="@drawable/duck" />
+
+        <ImageView
+            android:id="@+id/imageView51"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playcow"
+            app:srcCompat="@drawable/cow" />
+
+        <ImageView
+            android:id="@+id/imageView52"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playfrogforcow"
+            app:srcCompat="@drawable/frog"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="playpenguinforcow"
+            app:srcCompat="@drawable/penguin"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="186dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageListen13"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:background="@color/listen_button_color"
+        android:onClick="listenAgain13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout31"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+    <TextView
+        android:id="@+id/textListen13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listen"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageListen13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

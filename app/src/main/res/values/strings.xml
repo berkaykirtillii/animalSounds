@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimalSounds</string>
+    <string name="score">SCORE 0</string>
+    <string name="high">High Score</string>
+    <string name="time">Time 20 sec</string>
+    <string name="listen">Listen to animal</string>
+    <string name="dog">DOG</string>
+    <string name="elephant">ELEPHANT</string>
+    <string name="horse">HORSE</string>
+    <string name="monkey">MONKEY</string>
+    <string name="cow">COW</string>
+
+</resources>
